@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Patient.LoginPatientController">
+   <children>
+      <Label fx:id="labelLoginPatient" layoutX="786.0" layoutY="135.0" text="Login Patient">
+         <font>
+            <Font name="Bookman Old Style" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonLogin" layoutX="871.0" layoutY="503.0" mnemonicParsing="false" onAction="#buttonLoginAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #8fd7eb; -fx-text-fill: black;" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font></Button>
+      <Button fx:id="buttonCancel" layoutX="871.0" layoutY="664.0" mnemonicParsing="false" onAction="#buttonCancelAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #d12815; -fx-text-fill: white;" text="Cancel">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelTitel" layoutX="846.0" layoutY="217.0" style="-fx-text-fill: #b6b5b5;" text="Sign In to your account" textFill="#ff9898">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelUserName" layoutX="776.0" layoutY="257.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPassword" layoutX="776.0" layoutY="375.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldUserName" layoutX="776.0" layoutY="304.0" prefHeight="44.0" prefWidth="321.0" style="-fx-font-size: 18;">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passwordField" layoutX="776.0" layoutY="416.0" prefHeight="44.0" prefWidth="321.0" />
+      <Button fx:id="buttonRegister" layoutX="871.0" layoutY="584.0" mnemonicParsing="false" onAction="#buttonRegisterAction" prefHeight="54.0" prefWidth="172.0" style="-fx-background-color: #e0aa07; -fx-text-fill: black;" text="Register ">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="773.0" fitWidth="762.0">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202023-06-18%20at%2010.25.46%20AM.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="108.0" fitWidth="123.0" layoutX="886.0" layoutY="27.0">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202023-06-18%20at%2010.12.57%20AM.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

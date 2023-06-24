@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #9aa38b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.AdminDashboardBookedAppointmentsController">
+   <children>
+      <Label fx:id="labelAdminDashboard" alignment="CENTER" prefHeight="51.0" prefWidth="342.0" style="-fx-background-color: #373835;" text="Admin Dashboard" textFill="RED">
+         <font>
+            <Font name="Calisto MT Bold" size="32.0" />
+         </font></Label>
+      <AnchorPane layoutY="51.0" prefHeight="700.0" prefWidth="342.0" style="-fx-background-color: #373835;">
+         <children>
+            <Label fx:id="labelDoctorFunction" layoutX="57.0" layoutY="132.0" text="Doctor Functionality " textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonShowAllRegisterdPatients" layoutX="35.0" layoutY="223.0" mnemonicParsing="false" onAction="#buttonShowAllRegisterdPatientsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #62a8de; -fx-background-radius: 18;" text="Show All Registerd Patients ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSearchInPatientsByFirstName" layoutX="35.0" layoutY="274.0" mnemonicParsing="false" onAction="#buttonSearchInPatientsByFirstNameAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #62a8de; -fx-background-radius: 18;" text="Search In Patients By First Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonShowMyAllBookedAppointments" layoutX="35.0" layoutY="382.0" mnemonicParsing="false" onAction="#buttonShowMyAllBookedAppointmentsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #deaf49; -fx-background-radius: 18;" text="Show My All Booked Appointments">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonShowMyAllFreeAppointments" layoutX="35.0" layoutY="327.0" mnemonicParsing="false" onAction="#buttonShowMyAllFreeAppointmentsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #52f272; -fx-background-radius: 18;" text="Show My All Free Appointments ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSearchInBookedByFirstName" layoutX="35.0" layoutY="433.0" mnemonicParsing="false" onAction="#buttonSearchInBookedByFirstNameAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #deaf49; -fx-background-radius: 18;" text="Search In Booked By First Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="108.0" layoutY="581.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="51.0" prefWidth="127.0" style="-fx-background-color: red;" text="Logout">
+               <font>
+                  <Font name="MS Reference Specialty" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelTitel" layoutX="366.0" layoutY="80.0" text="Function of the Booked-Appointments ">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchInPatients" layoutX="363.0" layoutY="157.0" prefHeight="44.0" prefWidth="405.0" promptText="Enter your First Name" />
+      <TableView fx:id="bookedTableView" layoutX="360.0" layoutY="217.0" prefHeight="430.0" prefWidth="815.0">
+         <columns>
+            <TableColumn fx:id="idBookedCol" prefWidth="77.0" text="ID" />
+            <TableColumn fx:id="userIdCol" prefWidth="153.0" text="User_ID" />
+            <TableColumn fx:id="appIdCol" prefWidth="194.0" text="Appointment_ID" />
+            <TableColumn fx:id="statusBookedCol" prefWidth="141.0" text="Status" />
+            <TableColumn fx:id="docCommentCol" minWidth="0.0" prefWidth="249.0" text="Doctor Comment" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnShowAllBookedAppointments" layoutX="363.0" layoutY="657.0" mnemonicParsing="false" onAction="#btnShowAllBookedAppointmentsAction" prefHeight="51.0" prefWidth="269.0" style="-fx-background-color: #d0e889; -fx-font-weight: bold; -fx-background-radius: 18;" text="Show All Booked Appointments">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnCreate" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnLeaveComment" layoutX="681.0" layoutY="657.0" mnemonicParsing="false" onAction="#btnLeaveCommentAndFinishAction" prefHeight="51.0" prefWidth="269.0" style="-fx-background-color: #d0e889; -fx-font-weight: bold; -fx-background-radius: 18;" text="Leave a comment">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnCreate" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnSearchInBookedAppointments" layoutX="768.0" layoutY="157.0" mnemonicParsing="false" onAction="#btnSearchInBookedAppointmentsAction" prefHeight="44.0" prefWidth="257.0" style="-fx-background-color: #e31010; -fx-font-weight: bold;" text="Search in booked_appointments">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnShow" />
+         </styleClass>
+      </Button>
+      <ImageView fitHeight="137.0" fitWidth="134.0" layoutX="1046.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202023-06-18%20at%2010.12.57%20AM.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

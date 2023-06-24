@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" style="-fx-background-color: #9aa38b;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.AdminDashboardFreeAppointmentsController">
+   <children>
+      <Label fx:id="labelAdminDashboard" alignment="CENTER" prefHeight="51.0" prefWidth="342.0" style="-fx-background-color: #373835;" text="Admin Dashboard" textFill="RED">
+         <font>
+            <Font name="Calisto MT Bold" size="32.0" />
+         </font></Label>
+      <AnchorPane layoutY="51.0" prefHeight="700.0" prefWidth="342.0" style="-fx-background-color: #373835;">
+         <children>
+            <Label fx:id="labelDoctorFunction" layoutX="57.0" layoutY="122.0" text="Doctor Functionality " textFill="WHITE">
+               <font>
+                  <Font name="Calisto MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="buttonShowAllRegisterdPatients" layoutX="37.0" layoutY="212.0" mnemonicParsing="false" onAction="#buttonShowAllRegisterdPatientsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #62a8de; -fx-background-radius: 18;" text="Show All Registerd Patients ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSearchInPatientsByFirstName" layoutX="37.0" layoutY="260.0" mnemonicParsing="false" onAction="#buttonSearchInPatientsByFirstNameAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #62a8de; -fx-background-radius: 18;" text="Search In Patients By First Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonShowMyAllBookedAppointments" layoutX="35.0" layoutY="362.0" mnemonicParsing="false" onAction="#buttonShowMyAllBookedAppointmentsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #deaf49; -fx-background-radius: 18;" text="Show My All Booked Appointments">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonShowMyAllFreeAppointments" layoutX="37.0" layoutY="311.0" mnemonicParsing="false" onAction="#buttonShowMyAllFreeAppointmentsAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #52f272; -fx-background-radius: 18;" text="Show My All Free Appointments ">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonSearchInBookedByFirstName" layoutX="35.0" layoutY="413.0" mnemonicParsing="false" onAction="#buttonSearchInBookedByFirstNameAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #deaf49; -fx-background-radius: 18;" text="Search In Booked By First Name">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonLeaveAComment" layoutX="35.0" layoutY="464.0" mnemonicParsing="false" onAction="#buttonLeaveACommentAction" prefHeight="44.0" prefWidth="273.0" style="-fx-background-color: #deaf49; -fx-background-radius: 18;" text="Leave a Comment">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="115.0" layoutY="613.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="51.0" prefWidth="112.0" style="-fx-background-color: red;" text="Logout">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="labelTitel" layoutX="356.0" layoutY="86.0" text="Function of the Free-Appointments ">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCreateNewPatient" layoutX="435.0" layoutY="669.0" mnemonicParsing="false" onAction="#btncreateNewPatientAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #101ee0; -fx-font-weight: bold;" text="Create new patient ">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnCreate" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnDelelte" layoutX="920.0" layoutY="669.0" mnemonicParsing="false" onAction="#btndeleltePatientAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #e31010; -fx-font-weight: bold;" text="Delete patient ">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnCancel" />
+         </styleClass>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnUpdataPatient" layoutX="675.0" layoutY="669.0" mnemonicParsing="false" onAction="#btnupdatePatientAction" prefHeight="51.0" prefWidth="193.0" style="-fx-background-color: #1bcc14; -fx-font-weight: bold;" text="Updata patient ">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnUpdata" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnShowAllFreeAppointment" layoutX="362.0" layoutY="154.0" mnemonicParsing="false" onAction="#btnShowAllFreeAppointmentAction" prefHeight="44.0" prefWidth="354.0" style="-fx-background-color: #52f272; -fx-font-weight: bold;" text="Show All Free Appointments ">
+         <styleClass>
+            <String fx:value="search" />
+            <String fx:value="btnUpdata" />
+         </styleClass>
+      </Button>
+      <TableView fx:id="freeTableView" layoutX="360.0" layoutY="222.0" prefHeight="421.0" prefWidth="826.0">
+         <columns>
+            <TableColumn fx:id="idCol" prefWidth="60.0" text="ID" />
+            <TableColumn fx:id="appDateCol" prefWidth="192.0" text="Appointment Date" />
+            <TableColumn fx:id="appDayCol" prefWidth="209.0" text="Appointment Day" />
+            <TableColumn fx:id="appTimeCol" prefWidth="220.0" text="Appointment Time" />
+            <TableColumn fx:id="statusCol" minWidth="0.0" prefWidth="144.0" text="Status" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="142.0" fitWidth="140.0" layoutX="1046.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/WhatsApp%20Image%202023-06-18%20at%2010.12.57%20AM.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
